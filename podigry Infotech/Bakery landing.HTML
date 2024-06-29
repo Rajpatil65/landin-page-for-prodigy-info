@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Engineering Bakerywala's - Freshly Baked Goods</title>
+<style>
+    /* General Reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Header Styles */
+    header {
+        background-color: #ffb74d;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header p {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+        background-image: url('file:///C:/Users/Guest/Desktop/icons/f.png');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #0dc735;
+    }
+
+    .hero h2 {
+        font-size: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Products Section Styles */
+    .products {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .products h3 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .products p {
+        font-size: 2.1rem;
+        margin-bottom: 1.5rem;
+        color: #666;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .product {
+        
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        width: 300px;
+    }
+
+    .product img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .product .info {
+        padding: 15px;
+    }
+
+    .product h4 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+    }
+
+    .product p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .product .price {
+        font-size: 1.2rem;
+        color: #ff7043;
+    }
+
+    /* Call-to-Action Styles */
+    .cta {
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .cta h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta p {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta button {
+        background-color: #f57c00;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .cta button:hover {
+        background-color: #e65100;
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .products h3 {
+            font-size: 2rem;
+        }
+
+        .products p {
+            font-size: 1rem;
+        }
+
+        .product {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+</style>
+</head>
+<body>
+    
+<header>
+    <h1>Engineering Bakery</h1>
+    <p>Freshly Baked Goods</p>
+</header>
+
+<section class="hero">
+    <div>
+        
+        <h2>Welcome to Our Bakery</h2>
+       
+        
+    </div>
+</section>
+
+<section class="products">
+    <div>
+        <h3>Our Products</h3>
+        <p>Discover a variety of freshly baked treats</p>
+    </div>
+    <div class="product-list">
+        <div class="product">
+            <img src="file:///C:/Users/Guest/Desktop/icons/Chocolate%20Croissant.jpg" alt="Product 1">
+            <div class="info">
+                <h4>Chocolate Croissant</h4>
+                <p>A flaky pastry filled with rich chocolate</p>
+                <p class="price">$3.99</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="file:///C:/Users/Guest/Desktop/icons/Blueberry%20Muffin.jpg" alt="Product 2">
+            <div class="info">
+                <h4>Blueberry Muffin</h4>
+                <p>Moist muffin bursting with fresh blueberries</p>
+                <p class="price">$2.49</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="file:///C:/Users/Guest/Desktop/icons/Cinnamon%20Roll.jpg" alt="Product 3">
+            <div class="info">
+                <h4>Cinnamon Roll</h4>
+                <p>Soft roll with cinnamon swirls and icing</p>
+                <p class="price">$4.49</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="file:///C:/Users/Guest/Desktop/icons/Apple%20Pie.jpg" alt="Product 4">
+            <div class="info">
+                <h4>Apple Pie</h4>
+                <p>Classic pie with tender apples and flaky crust</p>
+                <p class="price">$9.99</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div>
+        <h2>Visit Us Today!</h2>
+        <p>Stop by our bakery and enjoy freshly baked goodness</p>
+        <button>Find Us</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Delicious Bakery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
